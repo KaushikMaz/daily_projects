@@ -1,9 +1,12 @@
 body{
     text-align: center;
     font-family: 'Happy Monkey', cursive;
+    background-color: #7ABBFF;
+    color: #ffffff;
 }
 
 img{
     width:150px;
     border-radius: 50%;
+    border:6px solid #F71A5B
 }
