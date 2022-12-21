@@ -14,9 +14,22 @@ h1,h2,h3,h4,p{
     text-shadow: 0px 0px 1px black;
 }
 
-h2,h4{
-    background:#F71A5B
+#age{
+    background:#F71A5B;
+    padding: 5px 15px;
+    border-radius: 5%;
+    margin:10px 0 15px 0;
+    
+ }
+
+
+#date{
+    background:#F71A5B;
+    padding: 5px 15px;
+    border-radius: 5%;
+    margin:0;
 }
+
 
 #header{
     display:flex;
