@@ -5,7 +5,7 @@ body{
     color: #ffffff;
 }
 
-img{
+#img{
     width:150px;
     border-radius: 50%;
     border:6px solid #F71A5B
@@ -36,3 +36,22 @@ h1,h2,h3,h4,p{
     flex-direction: column;
     align-items: center;
 }
+
+#gift-section{
+    margin-top:50px;
+}
+
+#gift-title{
+    margin-bottom: 5px;
+}
+
+#gift-hint{
+    margin-top:0px;
+}
+
+#gift-img{
+    width:400px;
+    border: 6px solid white;
+    border-radius: 10px;
+}
+    
