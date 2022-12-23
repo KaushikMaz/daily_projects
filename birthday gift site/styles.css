@@ -50,8 +50,12 @@ h1,h2,h3,h4,p{
 }
 
 #gift-img{
+    margin:0 auto;
     width:400px;
+    height: 400px;
     border: 6px solid white;
     border-radius: 10px;
+    background-image: url("https://images.unsplash.com/photo-1513201099705-a9746e1e201f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size:cover;
 }
     
