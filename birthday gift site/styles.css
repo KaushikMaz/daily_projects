@@ -49,7 +49,7 @@ h1,h2,h3,h4,p{
     margin-top:0px;
 }
 
-#gift-img{
+.gift-img{
     margin:0 auto;
     width:400px;
     height: 400px;
@@ -59,3 +59,23 @@ h1,h2,h3,h4,p{
     background-size:cover;
 }
     
+#gift-img-happy:hover{
+    background-image: url("/birthday\ gift\ site/happy.gif");
+    background-size: cover;
+    
+}
+
+#gift-img-cute:hover{
+    background-image: url("/birthday\ gift\ site/cute.gif");
+    background-size: cover;
+}
+
+#gift-img-blown:hover{
+    background-image: url("/birthday\ gift\ site/blown.gif");
+    background-size: cover;
+}
+
+#gift-img-badass:hover{
+    background-image: url("/birthday\ gift\ site/badass.gif");
+    background-size: cover;
+}
