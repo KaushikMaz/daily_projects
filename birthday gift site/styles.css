@@ -61,21 +61,30 @@ h1,h2,h3,h4,p{
     
 #gift-img-happy:hover{
     background-image: url("/birthday\ gift\ site/happy.gif");
-    background-size: cover;
+   
     
 }
 
 #gift-img-cute:hover{
     background-image: url("/birthday\ gift\ site/cute.gif");
-    background-size: cover;
+    
 }
 
 #gift-img-blown:hover{
     background-image: url("/birthday\ gift\ site/blown.gif");
-    background-size: cover;
+   
 }
 
 #gift-img-badass:hover{
     background-image: url("/birthday\ gift\ site/badass.gif");
-    background-size: cover;
+   
+}
+
+#gift-img-cheers:hover{
+    background-image: url("/birthday\ gift\ site/cheers.gif");
+    
+}
+
+#gift-img-cheers{
+    height:200px;
 }
