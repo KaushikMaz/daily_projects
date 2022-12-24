@@ -2,4 +2,14 @@ body{
     text-align: center;
     background-image: url("/spacepage/Space_image.jpg");
     background-size: cover;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn{
+    font-family: 'Orbitron', sans-serif;
+    padding: 6px 12px;
+    background:white;
+    border:none;
+
 }
