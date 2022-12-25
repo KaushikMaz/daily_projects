@@ -1,11 +1,21 @@
 body{
     text-align: center;
-    background-image: url("/spacepage/spaceimage.gif");
-    background-size:690px;
+   
     color:#7081A9;
     font-family: 'Orbitron', sans-serif;
+    margin:0;
 }
 
+#hero{
+    background-image: url("/spacepage/spaceimage.gif");
+    height:550px;
+    padding:10px 0 40px 0;
+    background-size: 680px;
+   
+    
+    
+
+}
 .btn{
     font-family: 'Orbitron', sans-serif;
     padding: 6px 12px;
@@ -16,6 +26,10 @@ body{
 
     
 
+}
+
+#title{
+    text-shadow: 0 0 5px black;
 }
 @font-face {
     font-family: corleone;
@@ -28,3 +42,4 @@ body{
 #main-logo{
     width:100px;
 }
+
