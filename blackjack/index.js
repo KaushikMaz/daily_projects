@@ -3,12 +3,17 @@ let cards=[]
 let sum=0;
 let hasBlackJack= false;
 let isAlive=false;
-
+let player={
+    name:"Sam",
+    chips:200
+}
 let message=" ";
 
 let messageEl= document.getElementById("message")
 let sumEl=document.querySelector("#sum")
 let cardsEl=document.getElementById("cards")
+let playerEl=document.getElementById("player")
+playerEl.textContent= player.name + ": $" + player.chips
 
 function randomCard(){
     let randomNum=Math.floor((Math.random()*13)) + 1;
