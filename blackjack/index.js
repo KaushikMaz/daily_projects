@@ -12,7 +12,14 @@ let sumEl=document.querySelector("#sum")
 let cardsEl=document.getElementById("cards")
 
 function randomCard(){
-    return Math.floor((Math.random()*13)) + 1;
+    let randomNum=Math.floor((Math.random()*13)) + 1;
+    if (randomNum>10){
+        return 10
+    }else if(randomNum===1){
+        return 11
+    }else{
+        return randomNum
+    }
 }
 
 const startGame=()=>{
