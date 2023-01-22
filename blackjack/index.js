@@ -1,9 +1,8 @@
-let firstCard=randomCard();
-let secondCard=randomCard();
-let cards=[firstCard,secondCard]
-let sum=firstCard + secondCard;
+
+let cards=[]
+let sum=0;
 let hasBlackJack= false;
-let isAlive=true;
+let isAlive=false;
 
 let message=" ";
 
@@ -23,6 +22,11 @@ function randomCard(){
 }
 
 const startGame=()=>{
+    isAlive=true;
+    let firstCard=randomCard();
+    let secondCard=randomCard();
+    sum=firstCard + secondCard;
+    cards=[firstCard, secondCard];
     renderGame()
 }
 
@@ -36,7 +40,7 @@ const renderGame=()=>{
 
 
     if( sum<=20){
-        message="Do you wnat to draw a new Card?"
+        message="Do you want to draw a new Card?"
     } else if( sum===21){
         message=" You got the blackJack!!"
         hasBlackJack= true;
