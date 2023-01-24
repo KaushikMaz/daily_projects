@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    padding: 10px;
+    width:100%;
+    box-sizing: border-box; /*since width will take padding and crosses the body */
+    margin-bottom: 5px;
+    border: 1px solid #065535;
+}
+
+button{
+    padding:10px 20px;
+    color: white;
+    background: #065535;
+    border:none;
+    font-weight: bold;
+    font-size: medium;
+
+}
