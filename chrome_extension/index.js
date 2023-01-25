@@ -1,5 +1,14 @@
+let myLeads=[];
+const inputText=document.getElementById("input-el")
 
-let inputBtn= document.getElementById("input-btn");
+const inputBtn= document.getElementById("input-btn");
+const ulEl=document.getElementById("ulEl");
+
 inputBtn.addEventListener("click",saveLead=()=>{
-    console.log("Button clicked through Event Handler")
+    myLeads.push(inputText.value)
+    console.log(myLeads)
 })
+
+for (let i=0;i<myLeads.length;i++){
+    ulEl.innerHTML+="<li> myLeads[i] </li>"
+}
