@@ -6,6 +6,12 @@ const ulEl=document.getElementById("ul");
 
 inputBtn.addEventListener("click",()=>{
     myLeads.push(inputText.value)
+    render();
+    
+    
+})
+
+const render=()=>{
     let listItems=""
     for (let i=0; i<myLeads.length ; i++){
         listItems+="<li>" + myLeads[i] + "</li>"
@@ -14,7 +20,6 @@ inputBtn.addEventListener("click",()=>{
         ulEl.append(li)*/
                
     }
-    ulEl.innerHTML=listItems; 
-    
-})
+    ulEl.innerHTML=listItems;
 
+}
