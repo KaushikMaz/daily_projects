@@ -15,7 +15,12 @@ inputBtn.addEventListener("click",()=>{
 const render=()=>{
     let listItems=""
     for (let i=0; i<myLeads.length ; i++){
-        listItems+="<li>" + myLeads[i] + "</li>"
+        // listItems+="<li><a href='"+myLeads[i]+"' target='_blank'>" + myLeads[i] + "</a></li>"
+        /*Template strings*/
+        listItems+=`<li>
+                        <a href='${myLeads[i]}' target='_blank'>${myLeads}
+                        </a>
+                    </li>`
         /*const li=document.createElement("li")
         li.textContent=myLeads[i]
         ulEl.append(li)*/
