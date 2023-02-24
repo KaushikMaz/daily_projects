@@ -11,6 +11,9 @@ for (let i=0;i<myEmojis.length;i++){
 }
 
 button.addEventListener("click", function(){
-    console.log(emojiInput.value)
+    if(emojiInput.value){
+        myEmojis.push(emojiInput.value)
+        emojiInput.value=""
+        console.log(myEmojis)
 
-})
+}})
