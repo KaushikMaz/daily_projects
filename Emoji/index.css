@@ -42,3 +42,5 @@ button {
     border-radius: 6px;
     margin: 0 auto;
 }
+#push-btn,#unshift-btn {
+    background-color: #80D87F;}
