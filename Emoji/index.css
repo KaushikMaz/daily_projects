@@ -22,3 +22,13 @@ body {
     margin: 10px;
     font-size: 60px;
 }
+
+input{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    height: 30px;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+}
