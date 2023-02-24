@@ -5,7 +5,7 @@ body{
     margin:0;
 }
 header{
-    background-color:#007fff;
+    background-color:#265C9F;
     padding:40px 0;
 
 }
@@ -22,4 +22,13 @@ h3{
     color:#d0aaff;
     margin:0;
 
+}
+
+section{
+    padding:40px 0;
+    
+}
+
+.main-image{
+    width:100%;
 }
