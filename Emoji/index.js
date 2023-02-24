@@ -39,10 +39,10 @@ removeBeginButton.addEventListener("click", function(){
     myEmojis.shift()
     renderEmojis()
         // console.log(myEmojis)
-}})
+})
 
 removeEndButton.addEventListener("click", function(){
     myEmojis.pop()
     renderEmojis()
         // console.log(myEmojis)
-}})
+})
