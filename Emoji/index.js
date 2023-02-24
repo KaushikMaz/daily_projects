@@ -1,5 +1,7 @@
 const myEmojis= ["👨‍💻", "⛷", "🍲"];
 const emojiContainer=document.getElementById("emojicontainer")
+const button= document.getElementById("push-btn")
+const emojiInput=document.getElementById("emojiInput")
 
 for (let i=0;i<myEmojis.length;i++){
     
@@ -7,3 +9,8 @@ for (let i=0;i<myEmojis.length;i++){
     emoji.textContent=myEmojis[i];
     emojiContainer.append(emoji)
 }
+
+button.addEventListener("click", function(){
+    console.log(emojiInput.value)
+
+})
