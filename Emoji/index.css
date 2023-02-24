@@ -44,3 +44,14 @@ button {
 }
 #push-btn,#unshift-btn {
     background-color: #80D87F;}
+
+#pop-btn,#shift-btn {
+        background-color: red;
+}
+
+#button-wrapper{
+    display:flex;
+    justify-content: center;
+    margin: 10px 0 0;
+
+}

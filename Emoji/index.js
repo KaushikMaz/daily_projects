@@ -2,6 +2,8 @@ const myEmojis= ["👨‍💻", "⛷", "🍲"];
 const emojiContainer=document.getElementById("emojicontainer")
 const button= document.getElementById("push-btn")
 const buttonTwo= document.getElementById("unshift-btn")
+const removeBeginButton=document.getElementById("shift-btn")
+const removeEndButton=document.getElementById("pop-btn")
 const emojiInput=document.getElementById("emojiInput")
 
 
@@ -28,6 +30,22 @@ button.addEventListener("click", function(){
 buttonTwo.addEventListener("click", function(){
     if(emojiInput.value){
         myEmojis.unshift(emojiInput.value)
+        emojiInput.value=""
+        renderEmojis()
+        // console.log(myEmojis)
+}})
+
+removeBeginButton.addEventListener("click", function(){
+    if(emojiInput.value){
+        myEmojis.shift(emojiInput.value)
+        emojiInput.value=""
+        renderEmojis()
+        // console.log(myEmojis)
+}})
+
+removeEndButton.addEventListener("click", function(){
+    if(emojiInput.value){
+        myEmojis.pop(emojiInput.value)
         emojiInput.value=""
         renderEmojis()
         // console.log(myEmojis)
