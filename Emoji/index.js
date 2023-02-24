@@ -6,6 +6,7 @@ const emojiInput=document.getElementById("emojiInput")
 
 
 function renderEmojis(){
+    emojiContainer.innerHTML=""
     for (let i=0;i<myEmojis.length;i++){
         const emoji= document.createElement("span")
         emoji.textContent=myEmojis[i];
@@ -19,7 +20,6 @@ button.addEventListener("click", function(){
     if(emojiInput.value){
         myEmojis.push(emojiInput.value)
         emojiInput.value=""
-        emojiContainer.innerHTML=""
         renderEmojis()
         // console.log(myEmojis)
 
@@ -29,7 +29,6 @@ buttonTwo.addEventListener("click", function(){
     if(emojiInput.value){
         myEmojis.unshift(emojiInput.value)
         emojiInput.value=""
-        emojiContainer.innerHTML=""
         renderEmojis()
         // console.log(myEmojis)
 }})
