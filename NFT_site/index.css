@@ -1,6 +1,25 @@
 body{
     font-size: 16px;
     color: #2b283a;
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Roboto', sans-serif;
     margin:0;
+}
+header{
+    background-color:#007fff;
+    padding:40px 0;
+
+}
+
+h1{
+    font-size: 36px;
+    color:whitesmoke;
+    margin:0;
+
+}
+
+h3{
+    font-size: 20px;
+    color:#d0aaff;
+    margin:0;
+
 }
