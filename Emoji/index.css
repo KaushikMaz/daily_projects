@@ -32,3 +32,13 @@ input{
     background: white;
     text-align: center;
 }
+button {
+    font-family: Baloo;
+    letter-spacing: px;
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 0 auto;
+}
