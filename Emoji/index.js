@@ -36,17 +36,13 @@ buttonTwo.addEventListener("click", function(){
 }})
 
 removeBeginButton.addEventListener("click", function(){
-    if(emojiInput.value){
-        myEmojis.shift(emojiInput.value)
-        emojiInput.value=""
-        renderEmojis()
+    myEmojis.shift()
+    renderEmojis()
         // console.log(myEmojis)
 }})
 
 removeEndButton.addEventListener("click", function(){
-    if(emojiInput.value){
-        myEmojis.pop(emojiInput.value)
-        emojiInput.value=""
-        renderEmojis()
+    myEmojis.pop()
+    renderEmojis()
         // console.log(myEmojis)
 }})
