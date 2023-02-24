@@ -40,7 +40,7 @@ button {
     border: none;
     padding: 4px 10px;
     border-radius: 6px;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 #push-btn,#unshift-btn {
     background-color: #80D87F;}
