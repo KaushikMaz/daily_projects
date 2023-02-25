@@ -4,12 +4,9 @@ body{
     font-family: 'Roboto', sans-serif;
     margin:0;
 }
-header{
-    background-color:#265C9F;
-    padding:40px 0;
 
-}
 
+/* typography */
 h1{
     font-size: 36px;
     color:whitesmoke;
@@ -21,6 +18,18 @@ h3{
     font-size: 20px;
     color:#d0aaff;
     margin:0;
+}
+
+h2{
+    margin:0;
+}
+
+
+/* Layout */
+
+header{
+    background-color:#265C9F;
+    padding:40px 0;
 
 }
 
@@ -33,6 +42,13 @@ section{
     width:100%;
 }
 
+.container{
+    width:620px;
+    margin:0 auto;
+}
+
+
+/* Links */
 a{
     color:#ef5839;
     text-decoration:underline;
