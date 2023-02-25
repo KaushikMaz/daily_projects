@@ -38,6 +38,11 @@ section{
     
 }
 
+.section-two{
+    background-color: #265C9F;
+    color: whitesmoke;
+}
+
 .main-image{
     width:100%;
 }
