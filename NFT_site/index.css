@@ -47,6 +47,15 @@ section{
     width:100%;
 }
 
+.feature-image{
+    width: 300px;
+    border-radius: 4.6px;
+}
+
+.section-two-image-container{
+    display:flex;
+    justify-content: space-between;
+}
 .container{
     width:620px;
     margin:0 auto;
