@@ -10,36 +10,40 @@ body{
 h1{
     font-size: 36px;
     color:whitesmoke;
-    margin:0;
+    
 
+}
+
+h1,h3{
+    margin:0;
 }
 
 h3{
     font-size: 20px;
     color:#d0aaff;
-    margin:0;
+    
 }
 
 h2{
-    margin:0;
+    margin-top:0;
 }
 
 
 /* Layout */
 
-header{
-    background-color:#265C9F;
-    padding:40px 0;
-
+header, section, footer{
+    padding: 40px 0;
 }
 
-section{
-    padding:40px 0;
+header,.section-two{
+    background-color:#265C9F;
     
 }
 
+
+
 .section-two{
-    background-color: #265C9F;
+    
     color: whitesmoke;
 }
 
@@ -64,7 +68,6 @@ section{
 footer{
     text-align: center;
     color:#265C9F;
-    padding: 40px 0;
 }
 
 
@@ -74,11 +77,9 @@ a{
     text-decoration:underline;
 }
 
-a:hover{
+a:hover, a:active{
     color:#d4b44c;
 }
 
-a:active{
-    color:#d4b44c;
-}
+
 
