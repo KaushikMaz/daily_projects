@@ -81,9 +81,7 @@ a:hover, a:active{
     color:#d4b44c;
 }
 
-.primary-btn,
-.secondary-btn,
-.normal-btn{
+.btn{
     padding: 10px 19px;
     border-radius: 4.6px;
     font-weight: 500;
