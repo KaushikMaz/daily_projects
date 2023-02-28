@@ -90,9 +90,7 @@ a:hover, a:active{
 
 }
 
-.primary-btn:active, .primary-btn:hover,
-.secondary-btn:active,.normal-btn:active,
-.secondary-btn:hover,.normal-btn:hover{
+btn:active, btn:hover{
     background-color: #f3e885;
     color:#2b283a;
 
