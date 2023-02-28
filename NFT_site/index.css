@@ -81,5 +81,35 @@ a:hover, a:active{
     color:#d4b44c;
 }
 
+.primary-btn,
+.secondary-btn,
+.normal-btn{
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    border:none;
+    font-weight: 500;
+
+}
+
+.primary-btn:active, .primary-btn:hover,
+.secondary-btn:active,.normal-btn:active,
+.secondary-btn:hover,.normal-btn:hover{
+    background-color: #f3e885;
+    color:#2b283a;
+
+
+}
+.primary-btn{
+    background-color:#265C9F;
+    color: whitesmoke;
+}
+.secondary-btn{
+    background-color:#f0e0ff;
+    color:#265C9F;
+}
+.normal-btn{
+    background-color: whitesmoke;
+    color:#265C9F;
+}
 
 
