@@ -1,4 +1,6 @@
 body{
+    background-image: url("https://unsplash.com/photos/51QUGLV6En0");
+    background-size: cover;
     font-family: 'Orbitron', sans-serif;
     text-align:center
 }
