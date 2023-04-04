@@ -32,6 +32,13 @@ button{
     color: antiquewhite;
 }
 
+#reset-btn{
+    display: block;
+    margin: 0 auto;
+    background-color:yellowgreen;
+    color:antiquewhite;
+}
+
 #save-btn{
     background-color: green;
     color: antiquewhite;
