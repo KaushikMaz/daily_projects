@@ -14,3 +14,24 @@ h2{
     font-weight: bold;
     margin-top: 0;
 }
+
+button{
+   border:none;
+   margin:20px 20px;
+   padding:20px 20px;
+   width: 400px;
+   font-family:inherit;
+   font-weight: bold;
+   font-size: large;
+   border-radius: 5px;
+}
+
+#increment-btn{
+    background-color: darkred;
+    color: antiquewhite;
+}
+
+#save-btn{
+    background-color: green;
+    color: antiquewhite;
+}
