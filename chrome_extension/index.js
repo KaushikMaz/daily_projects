@@ -7,9 +7,10 @@ const ulEl=document.getElementById("ul");
 inputBtn.addEventListener("click",()=>{
     myLeads.push(inputText.value)
     inputText.value=" ";
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))/* saving the input array into local storage*/
     render();
     
-    
+    console.log(localStorage.getItem("myLeads"))
 })
 
 const render=()=>{
