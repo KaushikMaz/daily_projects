@@ -4,6 +4,16 @@ const inputText=document.getElementById("input-el")
 const inputBtn= document.getElementById("input-btn");
 const ulEl=document.getElementById("ul");
 const deleteBtn=document.getElementById("delete-btn");
+const tabBtn=document.getElementById("tab-btn") 
+
+tabBtn.addEventListener("click",function(){
+    // IN chrome tabs, run a query such that its active and is in the current window such that
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads",JSON.stringify(myLeads))
+        render();
+
+})})
 
 deleteBtn.addEventListener("dblclick",function(){
     localStorage.clear()
