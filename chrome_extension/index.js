@@ -37,7 +37,7 @@ inputBtn.addEventListener("click",()=>{
     // console.log(localStorage.getItem("myLeads"))
 })
 
-const render=(leads)=>{
+function render(leads){
     let listItems=""
     for (let i=0; i<leads.length ; i++){
         // listItems+="<li><a href='"+myLeads[i]+"' target='_blank'>" + myLeads[i] + "</a></li>"
@@ -51,6 +51,7 @@ const render=(leads)=>{
         ulEl.append(li)*/
                
     }
+    
     ulEl.innerHTML=listItems;
 
 }
