@@ -27,7 +27,7 @@
 	</main>
 		<div class="modal" id="modal">
 			<div class="close-modal-btn-container">
-				<button class="modal-close-btn" id="modal-close-btn" >X</button>
+				<button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
 			</div>
 			<div class="modal-inner" id="modal-inner">
 				<h2>We ❤️ Your Data!</h2>
@@ -36,9 +36,9 @@
 					<input type="text" name="fullName" placeholder="Enter your full name" required>
 					<input type="email" name="email" placeholder="Enter your email" required>
 
-					<div id="modal-submit-btn">
+					<div id="modal-submit-btn" class="modal-submit-btn">
 						<button type="submit" class="modal-btn">Accept</button> <!-- type submit to keep it differentiated -->
-						<button type="button" class="modal-btn">Decline</button>
+						<button type="button" class="modal-btn" id="decline-btn">Decline</button>
 					</div>
 				</form>
 			</div>
