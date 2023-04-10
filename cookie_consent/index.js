@@ -12,5 +12,8 @@ modalCloseBtn.addEventListener("click",function(){
 })
 
 form.addEventListener("submit",(e)=>{
-    e.preventDefault()// It will help in hiding the data in url and stop the refresh after every submit click
+    e.preventDefault()// It will help in hiding the data in url and stop the refresh after every submit click.
+    
+    const consentFormData= new FormData(form) 
+    const fullName=consentFormData.get("fullName")
 })
