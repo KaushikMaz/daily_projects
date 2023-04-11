@@ -95,10 +95,11 @@ a:hover, a:active{
     padding: 0.5em 1.1em;
     border-radius: 4.6px;
     font-weight: 500;
-    margin-right: 0.5em;
+    /* margin-right: 0.5em; */
     margin-bottom: 1em;
-    display:inline-block;
+    display:block;
     text-decoration: none;
+    text-align: center;
 
 }
 
@@ -137,5 +138,9 @@ btn:active, btn:hover{
 @media(min-width:768px){
     header,footer,section{
         padding: 2.5em 0;
+    }
+    .btn{
+        display:inline-block;
+        margin-right: 0.5 em;
     }
 }
