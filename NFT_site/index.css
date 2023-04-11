@@ -127,6 +127,9 @@ btn:active, btn:hover{
 nav a {
     color: #fff;
     text-decoration: none;
+    font-size:1.125rem;
+    padding: 0.9rem 0;
+    display: block;
 }
 
 ul {
@@ -151,6 +154,19 @@ li:not(:last-child) {
     .feature-image {
         width: 48.8%;     
     }
+}
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }  
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }  
 }
 
 @media(min-width:768px){
