@@ -8,7 +8,7 @@ body{
 
 /* typography */
 h1{
-    font-size: 2.25rem;
+    font-size: 1.75rem;/* 2/16=1.75*/
     color:whitesmoke;
     
 
@@ -142,5 +142,8 @@ btn:active, btn:hover{
     .btn{
         display:inline-block;
         margin-right: 0.5 em;
+    }
+    h1{
+        font-size:2.25rem;
     }
 }
