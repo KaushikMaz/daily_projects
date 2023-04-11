@@ -1,5 +1,5 @@
 body{
-    font-size: 16px;
+    
     color: #2b283a;
     font-family: 'Roboto', sans-serif;
     margin:0;
@@ -8,7 +8,7 @@ body{
 
 /* typography */
 h1{
-    font-size: 36px;
+    font-size: 2.25rem;
     color:whitesmoke;
     
 
@@ -19,20 +19,23 @@ h1,h3{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 1.25rem;
     color:#d0aaff;
     
 }
 
 h2{
     margin-top:0;
+    font-size: 1.75rem;
 }
-
+p{
+    line-height:1.5;
+}
 
 /* Layout */
 
 header, section, footer{
-    padding: 40px 0;
+    padding: 1.25em 0; /* 20/16=1.25*/ 
 }
 
 header,.section-two{
@@ -49,19 +52,25 @@ header,.section-two{
 
 .main-image{
     width:100%;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 1.875em; /* 30/16=1.875em*/
 }
 
 .feature-image{
-    width: 300px;
+    width:48.5%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 .section-two-image-container{
     display:flex;
-    justify-content: space-between;
+    flex-direction: column;
+    
 }
 .container{
-    width:620px;
+    width:90%;
+    max-width:800px;
     margin:0 auto;
 }
 
@@ -82,9 +91,12 @@ a:hover, a:active{
 }
 
 .btn{
-    padding: 10px 19px;
+    font-size:1.125rem; /*18/16=1.125em*/
+    padding: 0.5em 1.1em;
     border-radius: 4.6px;
     font-weight: 500;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
     display:inline-block;
     text-decoration: none;
 
@@ -110,3 +122,20 @@ btn:active, btn:hover{
 }
 
 
+
+@media (min-width: 480px) {
+    .section-two-image-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .feature-image {
+        width: 48.8%;     
+    }
+}
+
+@media(min-width:768px){
+    header,footer,section{
+        padding: 2.5em 0;
+    }
+}
