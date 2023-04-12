@@ -138,9 +138,7 @@ ul {
     list-style-type: none;
 }
 
-li:not(:last-child) {
-    border-bottom: 1px dotted #a190b6;
-}
+
 
 
 /*---MEDIA QUERIES------*/
