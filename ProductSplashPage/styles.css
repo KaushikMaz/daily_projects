@@ -47,6 +47,9 @@ p{
     min-height: 250px;
     align-items: center;
     justify-content: center;
+    background: #9480e4 url("/ProductSplashPage/Images/intro-bg.png");
+    background-size: cover;
+    /*---Also added a background color if the image doesnt load---*/
     
 }
 
