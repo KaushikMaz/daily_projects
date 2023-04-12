@@ -37,6 +37,8 @@ p{
 .intro,.main-content{
     display: flex;
     flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 /*-----INTRO------*/
 .intro { 
@@ -83,7 +85,7 @@ p{
     }
     .beta-text{
         font-size: 1.25rem;/*---20px---*/
-        
+
     }
 
 }
