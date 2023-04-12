@@ -64,9 +64,13 @@ p{
     border-radius: 50%;
 }
 
-input{
+button,input{
     font-family: inherit;
     width:100%;
+
+}
+
+input{
     margin-bottom: 0.75em; /*12px*/
     padding:0.5em;
     border: 2px solid #d1d5db;
@@ -79,6 +83,21 @@ input:focus{
     background-color: #e6e8ec;
 }
 
+.btn{
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:1em 0;
+    margin-top: 1em;
+    border:none;
+    background-color: #8a71ec;
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color: #b7a7f6;
+}
 /*-------Media Querries------*/
 @media (min-width:576px){
     body{
