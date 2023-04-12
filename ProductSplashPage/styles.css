@@ -29,6 +29,9 @@ p{
     margin-bottom: 0.5em;
 }
 
+.beta-text, .subheading{
+    text-transform: uppercase;
+}
 
 /**----Flexbox containers-----*/
 .intro,.main-content{
