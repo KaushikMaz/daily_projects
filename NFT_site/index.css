@@ -173,6 +173,17 @@ li:not(:last-child) {
     header,footer,section{
         padding: 2.5em 0;
     }
+    header , nav ul{
+        display:flex;
+
+    }
+    nav li{
+        margin-right: 1.25rem;
+    }
+    header {
+        align-items: center;
+        justify-content: space-between;
+    }
     .btn{
         display:inline-block;
         margin-right: 0.5 em;
@@ -185,5 +196,9 @@ li:not(:last-child) {
     }
     p{
         font-size: 1.125rem;
+    }
+
+    nav{
+        display:flex
     }
 }
