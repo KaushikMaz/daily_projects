@@ -58,3 +58,32 @@ p{
     width:120px;
     border-radius: 50%;
 }
+
+/*-------Media Querries------*/
+@media (min-width:576px){
+    body{
+        display:flex;
+    }
+    .intro,.main-content{
+        width:50%;
+    }
+
+    .intro{
+        min-height:100vh;
+    }
+    .main-content{
+        justify-content: center;
+        padding-top: 0;
+    }
+    h1{
+        font-size: 3.25rem;/*---52 px--*/
+    }
+    h2{
+        font-size: 2.625rem;/*---42px--*/
+    }
+    .beta-text{
+        font-size: 1.25rem;/*---20px---*/
+        
+    }
+
+}
