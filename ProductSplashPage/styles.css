@@ -64,6 +64,21 @@ p{
     border-radius: 50%;
 }
 
+input{
+    font-family: inherit;
+    width:100%;
+    margin-bottom: 0.75em; /*12px*/
+    padding:0.5em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px; 
+}
+
+input:focus{
+    outline: none;
+    border-color: #8a71ec;
+    background-color: #e6e8ec;
+}
+
 /*-------Media Querries------*/
 @media (min-width:576px){
     body{
