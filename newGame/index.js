@@ -6,7 +6,7 @@ document.getElementById("hero").innerHTML=
         <div class="dice-container"><div class="dice"> 6 </div></div>
     </div> `
 
-document.getElementById('monster').innerHTML=
+document.getElementById("monster").innerHTML=
 `   <div class="character-card">
         <h4 class="name"> Orc </h4>
         <img class="avatar" src="/newGame/images/orc.png"/>
