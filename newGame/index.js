@@ -7,13 +7,16 @@ const hero={Id:"hero",name:"hero",avatar:"/newGame/images/wizard.png",health:60,
 const monster={Id:"monster",name:"Orc",avatar:"/newGame/images/orc.png",health:10,diceCount:2}
 
 
+
 function getDiceRollArray(diceCount) {
-    let newDiceRolls = [];
-    for (let i = 0; i < diceCount; i++) {
-        newDiceRolls.push(Math.floor(Math.random() * 6) + 1);
-    }
-    return newDiceRolls;
-}
+    // let newDiceRolls = [];
+    // for (let i = 0; i < diceCount; i++) {
+    //     newDiceRolls.push(Math.floor(Math.random() * 6) + 1);
+    // }
+    // return newDiceRolls;
+    return new Array(diceCount).fill(0).map(function(){
+        return Math.floor(Math.random()*6)+1
+})}
 
 function getDiceHtml(diceCount){
     return getDiceRollArray(diceCount).map(function(num){
