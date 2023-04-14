@@ -24,7 +24,9 @@ import Character from "../newGame/character.js"
     render()
 
     
-    
+    document.getElementById("attack-button").addEventListener("click",function(){
+        render()
+    })
     
 
 
