@@ -1,4 +1,4 @@
-import { getDiceRollArray } from "../newGame/utils.js";
+import { getDiceRollArray,getDicePlaceholderHtml } from "../newGame/utils.js";
 
 
 
@@ -25,6 +25,7 @@ function Character(data){
     // this.health=data.health
     // this.diceCount=data.diceCount
     Object.assign(this,data)
+    this.diceArray=getDicePlaceholderHtml(this.diceCount)
     this.getCharacterHtml= function(){
         const {Id,name,avatar,health,diceCount}=this;
         const diceHtml = this.getDiceHtml(diceCount)
@@ -34,7 +35,7 @@ function Character(data){
                     <img class="avatar" src="${this.avatar}" />
                     <div class="health">health: <b> ${this.health} </b></div>
                     <div class="dice-container">    
-                        ${diceHtml}
+                        ${this.diceArray}
                     </div>
                 </div>`;
         }
