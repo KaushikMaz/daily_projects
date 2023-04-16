@@ -13,6 +13,13 @@ import Character from "../newGame/character.js"
 //     }).join("")
 // }
 
+
+function attack(){
+    wizard.getDiceHtml()
+    orc.getDiceHtml()
+    render()
+}
+
     function render(){
         document.getElementById("hero").innerHTML=wizard.getCharacterHtml()
         document.getElementById("monster").innerHTML=orc.getCharacterHtml()
