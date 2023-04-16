@@ -40,10 +40,11 @@ function Character(data){
                 </div>`;
         }
     this.getDiceHtml= function(diceCount){
-        return getDiceRollArray(diceCount).map(function(num){
-            return `<div class="dice">${num}</div>`
+        this.currentDiceScore=getDiceRollArray(this.diceCount)
+        // return getDiceRollArray(diceCount).map(function(num){
+        //     return `<div class="dice">${num}</div>`
     
-        }).join("")
+        // }).join("")
     }
     }
 
