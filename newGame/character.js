@@ -39,6 +39,10 @@ function Character(data){
                     </div>
                 </div>`;
         }
+
+    this.takeDamage=function(attackScoreArray){
+        console.log(`${this.name}: ${attackScoreArray}`)
+    }
     this.getDiceHtml= function(diceCount){
         this.currentDiceScore=getDiceRollArray(this.diceCount)
         // return getDiceRollArray(diceCount).map(function(num){
