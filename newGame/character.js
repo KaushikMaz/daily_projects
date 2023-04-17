@@ -41,8 +41,7 @@ function Character(data){
         }
 
     this.takeDamage=function(attackScoreArray){
-        const totalScoreArray=attackScoreArray.reduce(function(total,num){
-            return total + num })
+        const totalScoreArray=attackScoreArray.reduce((total,num)=>total + num )
         this.health-=totalScoreArray
         if(this.health<=0){
             this.health=0
@@ -56,11 +55,10 @@ function Character(data){
         //     return `<div class="dice">${num}</div>`
     
         // }).join("")
-        this.diceArray=this.currentDiceScore.map(function(num){
-            return `<div class="dice">${num}</div>`
-        }).join('')
+        this.diceArray=this.currentDiceScore.map((num)=>
+            `<div class="dice">${num}</div>` ).join('')
     
     }
-    }
+}
 
 export default Character;
