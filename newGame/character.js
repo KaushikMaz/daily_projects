@@ -1,4 +1,4 @@
-import { getDiceRollArray,getDicePlaceholderHtml } from "../newGame/utils.js";
+import { getDiceRollArray,getDicePlaceholderHtml,getPercentage } from "../newGame/utils.js";
 
 
 
@@ -19,9 +19,7 @@ import { getDiceRollArray,getDicePlaceholderHtml } from "../newGame/utils.js";
 //Refactoring into a constructor function
 
 
-const getPercentage=(remainingHealth, maximumHealth)=>{
-    return (100*remainingHealth)/maximumHealth
-}
+
 function Character(data){
     // this.Id=data.Id
     // this.name=data.name
