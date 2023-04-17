@@ -26,6 +26,17 @@ function Character(data){
     // this.diceCount=data.diceCount
     Object.assign(this,data)
     this.diceArray=getDicePlaceholderHtml(this.diceCount)
+
+    this.maxHealth=this.health
+    this.getHealthBarHtml=()=>{
+        const percent=getPercentage(this.health,this.maxHealth)
+        return `<div class="health-bar-outer">
+                    <div class="health-bar-inner ${percent<26?"danger":""} " 
+                    style="width: ${percent}%;">
+                    </div>
+                </div>`
+    }  
+
     this.getCharacterHtml= function(){
         const {Id,name,avatar,health,diceCount,diceArray}=this;
         const diceHtml = this.getDiceHtml(diceCount)
@@ -49,15 +60,7 @@ function Character(data){
             this.health=0
             this.dead=true
         }
-    this.maxHealth=this.health
-    this.getHealthBarHtml=()=>{
-        const percent=getPercentage(this.health,this.maxHealth)
-        return `<div class="health-bar-outer">
-                    <div class="health-bar-inner ${percent<26?danger:""} " 
-                    style="width: ${percent}%;">
-                    </div>
-                </div>`
-    }  
+    
     }
     this.getDiceHtml= function(diceCount){
         this.currentDiceScore=getDiceRollArray(this.diceCount)
