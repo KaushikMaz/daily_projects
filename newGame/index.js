@@ -19,7 +19,14 @@ function attack(){
     orc.getDiceHtml()
     wizard.takeDamage(orc.currentDiceScore)
     orc.takeDamage(wizard.currentDiceScore)
+    if(wizard.dead|| orc.dead){
+        endGame()
+    }
     render()
+}
+
+function endGame(){
+    console.log("The Game is over")
 }
 
     function render(){

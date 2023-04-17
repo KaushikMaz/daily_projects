@@ -46,6 +46,7 @@ function Character(data){
         this.health-=totalScoreArray
         if(this.health<=0){
             this.health=0
+            this.dead=true
         }
         
     }
