@@ -46,7 +46,7 @@ function Character(data){
     
         // }).join("")
         this.diceArray=this.currentDiceScore.map(function(num){
-            `<div class="dice">${num}</div>`
+            return `<div class="dice">${num}</div>`
         }).join('')
     
     }
