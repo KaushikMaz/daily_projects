@@ -44,6 +44,9 @@ function Character(data){
         const totalScoreArray=attackScoreArray.reduce(function(total,num){
             return total + num })
         this.health-=totalScoreArray
+        if(this.health<=0){
+            this.health=0
+        }
         
     }
     this.getDiceHtml= function(diceCount){
