@@ -41,7 +41,10 @@ function Character(data){
         }
 
     this.takeDamage=function(attackScoreArray){
-        console.log(`${this.name}: ${attackScoreArray}`)
+        const totalScoreArray=attackScoreArray.reduce(function(total,num){
+            return total + num })
+        this.health-=totalScoreArray
+        
     }
     this.getDiceHtml= function(diceCount){
         this.currentDiceScore=getDiceRollArray(this.diceCount)
