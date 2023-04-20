@@ -14,11 +14,39 @@ nav{
     height: 30px;
     width:100%;
     color:blanchedalmond;
-    background-color: black;
+    background-color: darkslategray;
     text-align: center;
     letter-spacing: 5px;
 }
 
 #blog-list{
     padding:10px;
+}
+form{
+    padding:50px 10px 10px;
+    display:grid;
+    place-items: center;
+    background-color: blanchedalmond;
+    
+}
+
+#post-title,#post-body{
+    margin-bottom: 10px;
+    min-width:70%;
+}
+
+#post-body{
+    min-height: 100px;
+}
+
+button{
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    color: blanchedalmond;
+    padding:10px;
+    cursor: pointer;
+    background-color: darkslategray;
+    border: none;
+
 }
