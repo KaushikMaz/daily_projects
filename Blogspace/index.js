@@ -1,4 +1,5 @@
 let postArray=[]
+const form=document.getElementById("new-post")
 const renderPost=()=>{
     const blogList=postArray.map(num=>{
         return(`<h2>${num.title}</h2>
@@ -30,6 +31,7 @@ document.getElementById("new-post").addEventListener("submit",function(e){
         postArray.unshift(post)
         renderPost()
     })
+    form.reset()
 })
 
 
