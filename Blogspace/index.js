@@ -9,3 +9,15 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(res=>res.json())
     }).join(" ")
     document.getElementById("blog-list").innerHTML=blogList;
 })
+
+document.getElementById("new-post").addEventListener("submit",function(e){
+    e.preventDefault()
+    const postTitle=document.getElementById("post-title").value;
+    const postBody=document.getElementById("post-body").value;
+    const data={
+        title:postTitle,
+        body:postBody
+    }
+    console.log(data)
+})
+
