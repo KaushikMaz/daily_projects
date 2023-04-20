@@ -18,6 +18,10 @@ document.getElementById("new-post").addEventListener("submit",function(e){
         title:postTitle,
         body:postBody
     }
-    console.log(data)
+
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+    method:"POST",body:JSON.stringify(data),headers:{"Content-Type":"application/json"}})
+    .then(res=>res.json()).then(data=>console.log(data))
 })
+
 
