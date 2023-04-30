@@ -58,7 +58,7 @@ onValue(shoppingListDb,function(snapshot){
 
     
     } else{
-        shoppingListEl.innerHTML="No more items here..yet"
+        // shoppingListEl.innerHTML="No more items here..yet"
     }
 
 
