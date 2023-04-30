@@ -59,7 +59,7 @@ onValue(shoppingListDb,function(snapshot){
     
     } else{
         // shoppingListEl.innerHTML="No more items here..yet"
-            shoppingListEl.innerHTML=`<div id="End"> Add new items</div>`
+            shoppingListEl.innerHTML=`<p id="End"> Add new items</p>`
     }
 
 
