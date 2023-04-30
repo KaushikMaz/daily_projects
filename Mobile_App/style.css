@@ -3,6 +3,7 @@ body{
     padding:0;
     font-family:'Castoro Titling', cursive;
     background-color: #eedfcc;
+    color: #432000;
 }
 
 .container{
@@ -41,6 +42,10 @@ button{
     text-align:center;
     font-family: inherit;
 }
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+}
 
 ul{
     list-style-type: none;
@@ -60,3 +65,7 @@ ul li{
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 
 }
+
+ul li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;}
