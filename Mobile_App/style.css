@@ -69,6 +69,7 @@ ul li{
 
 .End{
     text-align:center;
+    display:inline-block;
 }
 
 ul li:hover {
