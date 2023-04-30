@@ -41,15 +41,24 @@ buttonEl.addEventListener("click", function(){
 //This function onValue executes whenever there is any change in the db
 
 onValue(shoppingListDb,function(snapshot){
-    let itemsArray=Object.entries(snapshot.val()) // Converting the objects into array
+    
 
-    clearShoppingList();// To clear the shoppinglist area after the onvalue function executes
+    if(snapshot.exists()){
+        let itemsArray=Object.entries(snapshot.val()) // Converting the objects into array
 
-    for(let i=0;i<itemsArray.length;i++){
-        let currentItem=itemsArray[i]
-        let currentItemId=currentItem[0]
-        let currentItemValue=currentItem[1]
-        addShoppingList(currentItem)
+        clearShoppingList();// To clear the shoppinglist area after the onvalue function executes
+
+        for(let i=0;i<itemsArray.length;i++){
+            let currentItem=itemsArray[i]
+            let currentItemId=currentItem[0]
+            let currentItemValue=currentItem[1]
+            addShoppingList(currentItem)
+
+    }
+
+    
+    } else{
+        shoppingListEl.innerHTML="No more items here..yet"
     }
 
 
