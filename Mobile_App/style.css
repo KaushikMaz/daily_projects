@@ -67,9 +67,9 @@ ul li{
 
 }
 
-.End{
-    text-align:center;
-    display:inline-block;
+.error{
+    margin:0 auto;
+    
 }
 
 ul li:hover {
