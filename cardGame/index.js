@@ -10,7 +10,8 @@ const handleClick=()=>{
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     .then(res=>res.json())
     .then(data=>{
-        document.getElementById("remaining").textContent=`Total:${data.remaining}`
+        remainingText.textContent=`Total:${data.remaining}`
+        drawCardBtn.disabled=false
         deckId=data.deck_id
      })
 }
