@@ -48,3 +48,15 @@ div.card-slot{
  div.card-slot:nth-of-type(1){
     margin-bottom: 100px;
 }
+
+div#top{
+    display:flex;
+    align-items: flex-start;
+    align-self: flex-start;
+
+}
+
+div>p{
+    margin:0;
+    margin-left:10px;
+}
