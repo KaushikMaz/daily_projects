@@ -15,5 +15,23 @@ document.getElementById("draw-cards").addEventListener("click",()=>{
         `<img src=${data.cards[0].image} class="cards"/>`
         document.getElementById("cards").children[1].innerHTML=
         `<img src=${data.cards[1].image} class="cards"/>`
+
+        const cardWinner= determineWinnerCard(data.cards[0],data.cards[1])
+        document.getElementById("winner").textContent=cardWinner
     })
 })
+
+function determineWinnerCard(card1, card2){
+    const valueOptions=["2","3","4","5","6", "7", "8", "9","10", "JACK", "QUEEN", "KING", "ACE"]
+    const cardValue1=valueOptions.indexOf(card1.value)
+    const cardValue2=valueOptions.indexOf(card2.value)
+
+    if(cardValue1>cardValue2){
+        return "Card 1 Wins!"
+    } else if(cardValue1<cardValue2){
+        return "Card 2 Wins!!!"
+    } else {
+        return "War!!!"
+    }
+}
+
