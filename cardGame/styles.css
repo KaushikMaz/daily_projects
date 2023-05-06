@@ -36,8 +36,8 @@ button#new-deck{
 div.card-slot{
     border:1px solid black;
     border-radius: 5px;
-    height:180px;
-    width:calc(180px*5/7); 
+    height:160px;
+    width:calc(160px*5/7); 
 
 } 
 
@@ -46,7 +46,7 @@ div.card-slot{
     height:100%; 
  } 
  div.card-slot:nth-of-type(1){
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 div#top{
