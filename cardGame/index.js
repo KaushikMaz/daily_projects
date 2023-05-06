@@ -3,7 +3,7 @@ const handleClick=()=>{
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     .then(res=>res.json())
     .then(data=>{
-        document.getElementById("remaining").textContent=`Remaining:${data.remaining}`
+        document.getElementById("remaining").textContent=`Total:${data.remaining}`
         deckId=data.deck_id
      })
 }
@@ -16,7 +16,7 @@ document.getElementById("draw-cards").addEventListener("click",()=>{
         `<img src=${data.cards[0].image} class="cards"/>`
         document.getElementById("cards").children[1].innerHTML=
         `<img src=${data.cards[1].image} class="cards"/>`
-        document.getElementById("remaining").textContent=`Remaining:${data.remaining}`
+        document.getElementById("remaining").textContent=`Remaining Cards:${data.remaining}`
 
         const cardWinner= determineWinnerCard(data.cards[0],data.cards[1])
         document.getElementById("winner").textContent=cardWinner
