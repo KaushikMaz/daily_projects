@@ -27,8 +27,14 @@ drawCardBtn.addEventListener("click",()=>{
 
         const cardWinner= determineWinnerCard(data.cards[0],data.cards[1])
         winner.textContent=cardWinner
+
+        if(data.remaining===0){
+            drawCardBtn.disabled=true
+        }
     })
 })
+
+
 
 function determineWinnerCard(card1, card2){
     const valueOptions=["2","3","4","5","6", "7", "8", "9","10", "JACK", "QUEEN", "KING", "ACE"]
