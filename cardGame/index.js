@@ -1,4 +1,11 @@
 let deckId;
+
+const cardsContainer = document.getElementById("cards")
+const newDeckBtn = document.getElementById("new-deck")
+const drawCardBtn = document.getElementById("draw-cards")
+const winner = document.getElementById("winner")
+const remainingText = document.getElementById("remaining")
+
 const handleClick=()=>{
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     .then(res=>res.json())
@@ -7,19 +14,19 @@ const handleClick=()=>{
         deckId=data.deck_id
      })
 }
-document.getElementById("new-deck").addEventListener("click",handleClick)
-document.getElementById("draw-cards").addEventListener("click",()=>{
+newDeckBtn.addEventListener("click",handleClick)
+drawCardBtn.addEventListener("click",()=>{
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
     .then(res=>res.json())
     .then(data=>{
-        document.getElementById("cards").children[0].innerHTML=
+        cardsContainer.children[0].innerHTML=
         `<img src=${data.cards[0].image} class="cards"/>`
-        document.getElementById("cards").children[1].innerHTML=
+        cardsContainer.children[1].innerHTML=
         `<img src=${data.cards[1].image} class="cards"/>`
-        document.getElementById("remaining").textContent=`Remaining Cards:${data.remaining}`
+        remainingText.textContent=`Remaining Cards:${data.remaining}`
 
         const cardWinner= determineWinnerCard(data.cards[0],data.cards[1])
-        document.getElementById("winner").textContent=cardWinner
+        winner.textContent=cardWinner
     })
 })
 
