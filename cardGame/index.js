@@ -3,6 +3,7 @@ const handleClick=()=>{
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     .then(res=>res.json())
     .then(data=>{
+        document.getElementById("remaining").textContent=`Remaining:${data.remaining}`
         deckId=data.deck_id
      })
 }
