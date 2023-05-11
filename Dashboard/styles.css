@@ -31,3 +31,16 @@ div#header{
     display: flex;
     justify-content: space-between;
 }
+
+div#crypto{
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+div#crypto> span{
+    margin-left: 10px;
+}
