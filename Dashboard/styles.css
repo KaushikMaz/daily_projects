@@ -13,6 +13,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 20px #242424 ;
 }
 
@@ -32,15 +33,21 @@ div#header{
     justify-content: space-between;
 }
 
-div#crypto{
+div#crypto-names{
     display:flex;
     align-items: center;
-    font-size: 1.5rem;
+    
 }
 
+div#crypto>p{
+    margin:0;
+}
 
+div#crypto{
+    font-size: 1.5rem;
 
+}
 
-div#crypto> span{
+div#crypto-names> span{
     margin-left: 10px;
 }
