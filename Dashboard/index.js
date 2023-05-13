@@ -19,3 +19,10 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
             <p>👇: $${data.market_data.low_24h.usd}</p>
         `
     })
+function getCurrentTime(){
+    
+const date=new Date();
+document.getElementById("time").textContent=date.toLocaleTimeString("en-US",{timeStyle:"short"})
+}
+
+setInterval(getCurrentTime,1000)
