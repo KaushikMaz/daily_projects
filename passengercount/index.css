@@ -33,7 +33,7 @@ button{
 }
 
 #reset-btn{
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     background-color:yellowgreen;
     color:antiquewhite;

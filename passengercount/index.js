@@ -16,4 +16,6 @@ function save(){
 }
 function reset(){
     countSave.textContent= "Previous Entries: "
+    count=0
+    countNum.textContent=0
 }
