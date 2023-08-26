@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:10px;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px ;
+    min-width: 600px ;
     
 }
 
@@ -40,6 +40,8 @@ ul{
 li{
     color: #4fd28a;
     margin-top: 5px;
+    font-size: medium;
+    padding:2px;
 }
 a{
     color:#4fd28a;
