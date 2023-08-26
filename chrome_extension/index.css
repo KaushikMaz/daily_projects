@@ -11,6 +11,7 @@ input{
     box-sizing: border-box; /*since width will take padding and crosses the body */
     margin-bottom: 5px;
     border: 1px solid #4fd28a;
+    border-radius: 5px;
 }
 
 button{
@@ -20,6 +21,7 @@ button{
     border:1px solid #4fd28a;
     font-weight: bold;
     font-size: medium;
+    border-radius: 5px;
 
 }
 

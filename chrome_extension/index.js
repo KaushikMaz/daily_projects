@@ -11,7 +11,7 @@ tabBtn.addEventListener("click",function(){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
         localStorage.setItem("myLeads",JSON.stringify(myLeads))
-        render();
+        render(myLeads);
 
 })})
 
@@ -32,7 +32,7 @@ inputBtn.addEventListener("click",()=>{
     myLeads.push(inputText.value)
     inputText.value=" ";
     localStorage.setItem("myLeads",JSON.stringify(myLeads))/* saving the input array into local storage*/
-    render();
+    render(myLeads);
     
     // console.log(localStorage.getItem("myLeads"))
 })
