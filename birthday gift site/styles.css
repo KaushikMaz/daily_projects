@@ -11,7 +11,7 @@ body{
     border:6px solid #F71A5B
 }
 h1,h2,h3,h4,p{
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 2px black;
 }
 
 #age{
@@ -60,28 +60,28 @@ h1,h2,h3,h4,p{
 }
     
 #gift-img-happy:hover{
-    background-image: url("/birthday\ gift\ site/happy.gif");
+    background-image: url("/birthday gift site/happy.gif");
    
     
 }
 
 #gift-img-cute:hover{
-    background-image: url("/birthday\ gift\ site/cute.gif");
+    background-image: url("/birthday gift site/cute.gif");
     
 }
 
 #gift-img-blown:hover{
-    background-image: url("/birthday\ gift\ site/blown.gif");
+    background-image: url("/birthday gift site/blown.gif");
    
 }
 
 #gift-img-badass:hover{
-    background-image: url("/birthday\ gift\ site/badass.gif");
+    background-image: url("/birthday gift site/badass.gif");
    
 }
 
 #gift-img-cheers:hover{
-    background-image: url("/birthday\ gift\ site/cheers.gif");
+    background-image: url("/birthday gift site/cheers.gif");
     
 }
 
