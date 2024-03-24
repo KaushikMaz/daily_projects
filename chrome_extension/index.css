@@ -11,15 +11,15 @@ input{
     width:100%;
     box-sizing: border-box; /*since width will take padding and crosses the body */
     margin-bottom: 5px;
-    border: 1px solid #4fd28a;
+    border: 1px solid #43A6C6;
     border-radius: 5px;
 }
 
 button{
     padding:10px 20px;
     color: white;
-    background: #4fd28a;
-    border:1px solid #4fd28a;
+    background:#43A6C6;
+    border:1px solid #43A6C6;
     font-weight: bold;
     font-size: medium;
     border-radius: 5px;
@@ -28,21 +28,21 @@ button{
 
 #delete-btn{
     background: white;
-    color: #4fd28a;
+    color: #43A6C6;
 
 }
 ul{
-    color:#4fd28a;
+    color:#43A6C6;
     list-style: none;
     padding-left: 0;
     margin-top: 5px;
 }
 li{
-    color: #4fd28a;
+    color: #43A6C6;
     margin-top: 5px;
     font-size: medium;
     padding:2px;
 }
 a{
-    color:#4fd28a;
+    color:#43A6C6;
 }
