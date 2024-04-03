@@ -1,3 +1,105 @@
 body{
     text-align:center;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,"Comme";
+}
+
+
+
+#bgImage{
+    background-image: url("https://images.unsplash.com/photo-1711560705654-325ba859c38b?q=80&w=1561&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    
+}
+
+@font-face {
+    font-family:Cassandra;
+    src: url("Cassandra.ttf");
+}
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:15rem ;
+    color:#091E36;
+    font-size: 20px;
+}
+#titleHead{
+    font-family: Cassandra;
+    margin:auto;
+    font-size: 44px;
+    font-weight: bolder;
+
+}
+
+.bodystyle{
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+.no{
+    color:#542411;
+    text-shadow: 2px 2px 2px  #451111;
+}
+
+.bodyImage{
+    background: url("https://plus.unsplash.com/premium_photo-1664461664321-c9b95d47f0a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    
+}
+
+.section_inner{
+    position:relative;
+}
+
+a{ 
+    text-decoration: none;
+}
+.list{
+    position: absolute;
+    top:-1.5rem;
+    margin: 0;
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+
+.list_items{
+    width:12rem;
+    height:15rem;
+    border: 1px solid whitesmoke;
+    border-radius: 5%;
+    cursor: pointer;
+    background: whitesmoke;
+    
+}
+.list_items:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+    z-index: 1; /* Bring the element to the front */
+}
+
+
+.list_image{
+    width:100%;
+    height: 12rem;
+    overflow: hidden;
+
+}
+
+.list_image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+    padding: 0;
 }
