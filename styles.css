@@ -85,6 +85,7 @@ a{
     
 }
 .list_items:hover {
+    transition:all ease-in-out 0.07s;
     transform: scale(1.1); /* Increase the size by 10% */
     z-index: 1; /* Bring the element to the front */
 }
